@@ -9,14 +9,16 @@
 #import "MainViewController.h"
 #import "AppDelegate.h"
 #import "TimestampWindowController.h"
+#import "CodingWindowController.h"
 
-@interface MainViewController ()<NSTableViewDelegate, NSTableViewDataSource>
+@interface MainViewController ()<NSTableViewDelegate, NSTableViewDataSource, TimestampWindowClosedDelegate, CodingWindowClosedDelegate>
 
 @end
 
 @implementation MainViewController {
     NSArray *_listArray;
     TimestampWindowController *_timestampWC;
+    CodingWindowController *_codingWC;
 }
 
 - (void)viewDidLoad {
@@ -25,6 +27,7 @@
     _listArray = @[@"时间戳", @"编码"];
     _tableView.delegate = self;
     _tableView.dataSource = self;
+    
 }
 
 - (IBAction)buttonAction:(id)sender {
@@ -39,8 +42,16 @@
     if (tableView.selectedRow == 0) {
         if (!_timestampWC) {
             _timestampWC = [[TimestampWindowController alloc] initWithWindowNibName:@"TimestampWindowController"];
+            _timestampWC.delegate = self;
             [_timestampWC showWindow:notification];
             [_timestampWC.window center];
+        }
+    }else {
+        if (!_codingWC) {
+            _codingWC = [[CodingWindowController alloc] initWithWindowNibName:@"CodingWindowController"];
+            _codingWC.delegate = self;
+            [_codingWC showWindow:nil];
+            [_codingWC.window center];
         }
     }
     
@@ -81,5 +92,14 @@
         return cellView;
     }
 }
+
+- (void)timestampWindowWillClose {
+    _timestampWC = nil;
+}
+
+- (void)codingWindowWillClose {
+    _codingWC = nil;
+}
+
 
 @end

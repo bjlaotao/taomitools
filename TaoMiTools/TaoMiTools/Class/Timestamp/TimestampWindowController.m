@@ -35,6 +35,15 @@
     // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
     [self configDate];
     [self configData];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(closeWindow) name:NSWindowWillCloseNotification object:nil];
+}
+
+- (void)closeWindow {
+    NSLog(@"close");
+    if ([_delegate respondsToSelector:@selector(timestampWindowWillClose)]) {
+        [_delegate timestampWindowWillClose];
+    }
 }
 
 #pragma mark - 初始化控件
@@ -94,6 +103,10 @@
 
 - (void)dealloc {
     NSLog(@"我自由啦");
+}
+
+- (void)close {
+    NSLog(@"关闭啦");
 }
 
 @end

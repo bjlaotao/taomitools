@@ -18,6 +18,8 @@
 		0B21908721490F400094F927 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B21908421490F400094F927 /* MainViewController.m */; };
 		0B21908C21490F6C0094F927 /* TimestampWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B21908A21490F6C0094F927 /* TimestampWindowController.m */; };
 		0B21908D21490F6C0094F927 /* TimestampWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B21908B21490F6C0094F927 /* TimestampWindowController.xib */; };
+		0B8088AC214A7A080065CB3F /* CodingWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B8088AA214A7A080065CB3F /* CodingWindowController.m */; };
+		0B8088AD214A7A080065CB3F /* CodingWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B8088AB214A7A080065CB3F /* CodingWindowController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,9 @@
 		0B21908921490F6C0094F927 /* TimestampWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimestampWindowController.h; sourceTree = "<group>"; };
 		0B21908A21490F6C0094F927 /* TimestampWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimestampWindowController.m; sourceTree = "<group>"; };
 		0B21908B21490F6C0094F927 /* TimestampWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimestampWindowController.xib; sourceTree = "<group>"; };
+		0B8088A9214A7A080065CB3F /* CodingWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodingWindowController.h; sourceTree = "<group>"; };
+		0B8088AA214A7A080065CB3F /* CodingWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodingWindowController.m; sourceTree = "<group>"; };
+		0B8088AB214A7A080065CB3F /* CodingWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CodingWindowController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +188,9 @@
 		0B21908821490F590094F927 /* Coding */ = {
 			isa = PBXGroup;
 			children = (
+				0B8088A9214A7A080065CB3F /* CodingWindowController.h */,
+				0B8088AA214A7A080065CB3F /* CodingWindowController.m */,
+				0B8088AB214A7A080065CB3F /* CodingWindowController.xib */,
 			);
 			path = Coding;
 			sourceTree = "<group>";
@@ -292,6 +300,7 @@
 			files = (
 				0B2190402148EF570094F927 /* Assets.xcassets in Resources */,
 				0B21908621490F400094F927 /* MainViewController.xib in Resources */,
+				0B8088AD214A7A080065CB3F /* CodingWindowController.xib in Resources */,
 				0B21908D21490F6C0094F927 /* TimestampWindowController.xib in Resources */,
 				0B2190432148EF570094F927 /* MainMenu.xib in Resources */,
 			);
@@ -319,6 +328,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B21908C21490F6C0094F927 /* TimestampWindowController.m in Sources */,
+				0B8088AC214A7A080065CB3F /* CodingWindowController.m in Sources */,
 				0B2190462148EF570094F927 /* main.m in Sources */,
 				0B21908121490F200094F927 /* AppDelegate.m in Sources */,
 				0B21908721490F400094F927 /* MainViewController.m in Sources */,

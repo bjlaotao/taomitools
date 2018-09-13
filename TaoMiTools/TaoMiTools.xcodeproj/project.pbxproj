@@ -1,0 +1,627 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B2190402148EF570094F927 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B21903F2148EF570094F927 /* Assets.xcassets */; };
+		0B2190432148EF570094F927 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B2190412148EF570094F927 /* MainMenu.xib */; };
+		0B2190462148EF570094F927 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B2190452148EF570094F927 /* main.m */; };
+		0B2190512148EF570094F927 /* TaoMiToolsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B2190502148EF570094F927 /* TaoMiToolsTests.m */; };
+		0B21905C2148EF570094F927 /* TaoMiToolsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B21905B2148EF570094F927 /* TaoMiToolsUITests.m */; };
+		0B2190702148F08C0094F927 /* ScaryBugData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B21906F2148F08C0094F927 /* ScaryBugData.m */; };
+		0B21908121490F200094F927 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B21907F21490F200094F927 /* AppDelegate.m */; };
+		0B21908621490F400094F927 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B21908321490F400094F927 /* MainViewController.xib */; };
+		0B21908721490F400094F927 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B21908421490F400094F927 /* MainViewController.m */; };
+		0B21908C21490F6C0094F927 /* TimestampWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B21908A21490F6C0094F927 /* TimestampWindowController.m */; };
+		0B21908D21490F6C0094F927 /* TimestampWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B21908B21490F6C0094F927 /* TimestampWindowController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0B21904D2148EF570094F927 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B2190312148EF570094F927 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B2190382148EF570094F927;
+			remoteInfo = TaoMiTools;
+		};
+		0B2190582148EF570094F927 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B2190312148EF570094F927 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B2190382148EF570094F927;
+			remoteInfo = TaoMiTools;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0B2190392148EF570094F927 /* TaoMiTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaoMiTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B21903F2148EF570094F927 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0B2190422148EF570094F927 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		0B2190442148EF570094F927 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B2190452148EF570094F927 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0B2190472148EF570094F927 /* TaoMiTools.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TaoMiTools.entitlements; sourceTree = "<group>"; };
+		0B21904C2148EF570094F927 /* TaoMiToolsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaoMiToolsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B2190502148EF570094F927 /* TaoMiToolsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TaoMiToolsTests.m; sourceTree = "<group>"; };
+		0B2190522148EF570094F927 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B2190572148EF570094F927 /* TaoMiToolsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaoMiToolsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B21905B2148EF570094F927 /* TaoMiToolsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TaoMiToolsUITests.m; sourceTree = "<group>"; };
+		0B21905D2148EF570094F927 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B21906E2148F08C0094F927 /* ScaryBugData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScaryBugData.h; sourceTree = "<group>"; };
+		0B21906F2148F08C0094F927 /* ScaryBugData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScaryBugData.m; sourceTree = "<group>"; };
+		0B21907E21490F200094F927 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0B21907F21490F200094F927 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0B21908321490F400094F927 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		0B21908421490F400094F927 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		0B21908521490F400094F927 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		0B21908921490F6C0094F927 /* TimestampWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimestampWindowController.h; sourceTree = "<group>"; };
+		0B21908A21490F6C0094F927 /* TimestampWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimestampWindowController.m; sourceTree = "<group>"; };
+		0B21908B21490F6C0094F927 /* TimestampWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimestampWindowController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0B2190362148EF570094F927 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B2190492148EF570094F927 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B2190542148EF570094F927 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B2190302148EF570094F927 = {
+			isa = PBXGroup;
+			children = (
+				0B21903B2148EF570094F927 /* TaoMiTools */,
+				0B21904F2148EF570094F927 /* TaoMiToolsTests */,
+				0B21905A2148EF570094F927 /* TaoMiToolsUITests */,
+				0B21903A2148EF570094F927 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0B21903A2148EF570094F927 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0B2190392148EF570094F927 /* TaoMiTools.app */,
+				0B21904C2148EF570094F927 /* TaoMiToolsTests.xctest */,
+				0B2190572148EF570094F927 /* TaoMiToolsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0B21903B2148EF570094F927 /* TaoMiTools */ = {
+			isa = PBXGroup;
+			children = (
+				0B21907B21490F200094F927 /* Class */,
+				0B21903F2148EF570094F927 /* Assets.xcassets */,
+				0B2190412148EF570094F927 /* MainMenu.xib */,
+				0B2190442148EF570094F927 /* Info.plist */,
+				0B2190452148EF570094F927 /* main.m */,
+				0B2190472148EF570094F927 /* TaoMiTools.entitlements */,
+				0B21906E2148F08C0094F927 /* ScaryBugData.h */,
+				0B21906F2148F08C0094F927 /* ScaryBugData.m */,
+			);
+			path = TaoMiTools;
+			sourceTree = "<group>";
+		};
+		0B21904F2148EF570094F927 /* TaoMiToolsTests */ = {
+			isa = PBXGroup;
+			children = (
+				0B2190502148EF570094F927 /* TaoMiToolsTests.m */,
+				0B2190522148EF570094F927 /* Info.plist */,
+			);
+			path = TaoMiToolsTests;
+			sourceTree = "<group>";
+		};
+		0B21905A2148EF570094F927 /* TaoMiToolsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0B21905B2148EF570094F927 /* TaoMiToolsUITests.m */,
+				0B21905D2148EF570094F927 /* Info.plist */,
+			);
+			path = TaoMiToolsUITests;
+			sourceTree = "<group>";
+		};
+		0B21907B21490F200094F927 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				0B21907D21490F200094F927 /* AppDelegate */,
+				0B21908221490F400094F927 /* MainWindow */,
+				0B21908021490F200094F927 /* Timestamp */,
+				0B21908821490F590094F927 /* Coding */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		0B21907D21490F200094F927 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				0B21907E21490F200094F927 /* AppDelegate.h */,
+				0B21907F21490F200094F927 /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		0B21908021490F200094F927 /* Timestamp */ = {
+			isa = PBXGroup;
+			children = (
+				0B21908921490F6C0094F927 /* TimestampWindowController.h */,
+				0B21908A21490F6C0094F927 /* TimestampWindowController.m */,
+				0B21908B21490F6C0094F927 /* TimestampWindowController.xib */,
+			);
+			path = Timestamp;
+			sourceTree = "<group>";
+		};
+		0B21908221490F400094F927 /* MainWindow */ = {
+			isa = PBXGroup;
+			children = (
+				0B21908521490F400094F927 /* MainViewController.h */,
+				0B21908421490F400094F927 /* MainViewController.m */,
+				0B21908321490F400094F927 /* MainViewController.xib */,
+			);
+			path = MainWindow;
+			sourceTree = "<group>";
+		};
+		0B21908821490F590094F927 /* Coding */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coding;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0B2190382148EF570094F927 /* TaoMiTools */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B2190602148EF580094F927 /* Build configuration list for PBXNativeTarget "TaoMiTools" */;
+			buildPhases = (
+				0B2190352148EF570094F927 /* Sources */,
+				0B2190362148EF570094F927 /* Frameworks */,
+				0B2190372148EF570094F927 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TaoMiTools;
+			productName = TaoMiTools;
+			productReference = 0B2190392148EF570094F927 /* TaoMiTools.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0B21904B2148EF570094F927 /* TaoMiToolsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B2190632148EF580094F927 /* Build configuration list for PBXNativeTarget "TaoMiToolsTests" */;
+			buildPhases = (
+				0B2190482148EF570094F927 /* Sources */,
+				0B2190492148EF570094F927 /* Frameworks */,
+				0B21904A2148EF570094F927 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0B21904E2148EF570094F927 /* PBXTargetDependency */,
+			);
+			name = TaoMiToolsTests;
+			productName = TaoMiToolsTests;
+			productReference = 0B21904C2148EF570094F927 /* TaoMiToolsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0B2190562148EF570094F927 /* TaoMiToolsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B2190662148EF580094F927 /* Build configuration list for PBXNativeTarget "TaoMiToolsUITests" */;
+			buildPhases = (
+				0B2190532148EF570094F927 /* Sources */,
+				0B2190542148EF570094F927 /* Frameworks */,
+				0B2190552148EF570094F927 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0B2190592148EF570094F927 /* PBXTargetDependency */,
+			);
+			name = TaoMiToolsUITests;
+			productName = TaoMiToolsUITests;
+			productReference = 0B2190572148EF570094F927 /* TaoMiToolsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0B2190312148EF570094F927 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = MixReality;
+				TargetAttributes = {
+					0B2190382148EF570094F927 = {
+						CreatedOnToolsVersion = 9.4;
+					};
+					0B21904B2148EF570094F927 = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 0B2190382148EF570094F927;
+					};
+					0B2190562148EF570094F927 = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 0B2190382148EF570094F927;
+					};
+				};
+			};
+			buildConfigurationList = 0B2190342148EF570094F927 /* Build configuration list for PBXProject "TaoMiTools" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0B2190302148EF570094F927;
+			productRefGroup = 0B21903A2148EF570094F927 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0B2190382148EF570094F927 /* TaoMiTools */,
+				0B21904B2148EF570094F927 /* TaoMiToolsTests */,
+				0B2190562148EF570094F927 /* TaoMiToolsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0B2190372148EF570094F927 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B2190402148EF570094F927 /* Assets.xcassets in Resources */,
+				0B21908621490F400094F927 /* MainViewController.xib in Resources */,
+				0B21908D21490F6C0094F927 /* TimestampWindowController.xib in Resources */,
+				0B2190432148EF570094F927 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B21904A2148EF570094F927 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B2190552148EF570094F927 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0B2190352148EF570094F927 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B21908C21490F6C0094F927 /* TimestampWindowController.m in Sources */,
+				0B2190462148EF570094F927 /* main.m in Sources */,
+				0B21908121490F200094F927 /* AppDelegate.m in Sources */,
+				0B21908721490F400094F927 /* MainViewController.m in Sources */,
+				0B2190702148F08C0094F927 /* ScaryBugData.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B2190482148EF570094F927 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B2190512148EF570094F927 /* TaoMiToolsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B2190532148EF570094F927 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B21905C2148EF570094F927 /* TaoMiToolsUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0B21904E2148EF570094F927 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0B2190382148EF570094F927 /* TaoMiTools */;
+			targetProxy = 0B21904D2148EF570094F927 /* PBXContainerItemProxy */;
+		};
+		0B2190592148EF570094F927 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0B2190382148EF570094F927 /* TaoMiTools */;
+			targetProxy = 0B2190582148EF570094F927 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0B2190412148EF570094F927 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B2190422148EF570094F927 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0B21905E2148EF580094F927 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		0B21905F2148EF580094F927 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		0B2190612148EF580094F927 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TaoMiTools/TaoMiTools.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TaoMiTools/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bbccu.TaoMiTools;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0B2190622148EF580094F927 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TaoMiTools/TaoMiTools.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TaoMiTools/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bbccu.TaoMiTools;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0B2190642148EF580094F927 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TaoMiToolsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bbccu.TaoMiToolsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TaoMiTools.app/Contents/MacOS/TaoMiTools";
+			};
+			name = Debug;
+		};
+		0B2190652148EF580094F927 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TaoMiToolsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bbccu.TaoMiToolsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TaoMiTools.app/Contents/MacOS/TaoMiTools";
+			};
+			name = Release;
+		};
+		0B2190672148EF580094F927 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TaoMiToolsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bbccu.TaoMiToolsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TaoMiTools;
+			};
+			name = Debug;
+		};
+		0B2190682148EF580094F927 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TaoMiToolsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bbccu.TaoMiToolsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TaoMiTools;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0B2190342148EF570094F927 /* Build configuration list for PBXProject "TaoMiTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B21905E2148EF580094F927 /* Debug */,
+				0B21905F2148EF580094F927 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B2190602148EF580094F927 /* Build configuration list for PBXNativeTarget "TaoMiTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B2190612148EF580094F927 /* Debug */,
+				0B2190622148EF580094F927 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B2190632148EF580094F927 /* Build configuration list for PBXNativeTarget "TaoMiToolsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B2190642148EF580094F927 /* Debug */,
+				0B2190652148EF580094F927 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B2190662148EF580094F927 /* Build configuration list for PBXNativeTarget "TaoMiToolsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B2190672148EF580094F927 /* Debug */,
+				0B2190682148EF580094F927 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0B2190312148EF570094F927 /* Project object */;
+}

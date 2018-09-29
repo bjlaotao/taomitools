@@ -10,6 +10,7 @@
 #import "AppDelegate.h"
 #import "TimestampWindowController.h"
 #import "CodingWindowController.h"
+#import "ColorConversionWindowController.h"
 
 @interface MainViewController ()<NSTableViewDelegate, NSTableViewDataSource, TimestampWindowClosedDelegate, CodingWindowClosedDelegate>
 
@@ -19,19 +20,16 @@
     NSArray *_listArray;
     TimestampWindowController *_timestampWC;
     CodingWindowController *_codingWC;
+    ColorConversionWindowController *_colorConversionWC;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do view setup here.
-    _listArray = @[@"时间戳", @"编码"];
+    _listArray = @[@"时间戳", @"编码", @"16进制颜色与RGB转换"];
     _tableView.delegate = self;
     _tableView.dataSource = self;
     
-}
-
-- (IBAction)buttonAction:(id)sender {
-    NSLog(@"===");
 }
 
 #pragma mark - 选中的响应
@@ -39,38 +37,37 @@
 //    NSLog(@"%@", notification);
     NSTableView *tableView = notification.object;
 //    NSLog(@"%d, %d", tableView.selectedColumn, tableView.selectedRow);
-    if (tableView.selectedRow == 0) {
-        if (!_timestampWC) {
-            _timestampWC = [[TimestampWindowController alloc] initWithWindowNibName:@"TimestampWindowController"];
-            _timestampWC.delegate = self;
-            [_timestampWC showWindow:notification];
-            [_timestampWC.window center];
+    switch (tableView.selectedRow) {
+        case 0: {
+            if (!_timestampWC) {
+                _timestampWC = [[TimestampWindowController alloc] initWithWindowNibName:@"TimestampWindowController"];
+                _timestampWC.delegate = self;
+                [_timestampWC showWindow:notification];
+                [_timestampWC.window center];
+            }
         }
-    }else {
-        if (!_codingWC) {
-            _codingWC = [[CodingWindowController alloc] initWithWindowNibName:@"CodingWindowController"];
-            _codingWC.delegate = self;
-            [_codingWC showWindow:nil];
-            [_codingWC.window center];
+            break;
+        case 1: {
+            if (!_codingWC) {
+                _codingWC = [[CodingWindowController alloc] initWithWindowNibName:@"CodingWindowController"];
+                _codingWC.delegate = self;
+                [_codingWC showWindow:nil];
+                [_codingWC.window center];
+            }
         }
+            break;
+        case 2: {
+            if (!_colorConversionWC) {
+                _colorConversionWC = [[ColorConversionWindowController alloc] initWithWindowNibName:@"ColorConversionWindowController"];
+                [_colorConversionWC showWindow:notification];
+                [_colorConversionWC.window center];
+            }
+        }
+            break;
+        default:
+            break;
     }
     
-    
-    
-//    TestViewController *testVC = [[TestViewController alloc] initWithNibName:@"TestViewController" bundle:nil];
-    
-//    AppDelegate *appDelegate = (AppDelegate *)[NSApplication sharedApplication].delegate;
-//    [appDelegate.window.contentView addSubview:testVC.view];
-
-//    NSRect bounds = appDelegate.window.contentView.bounds;
-//
-//    testVC.view.frame = CGRectMake(bounds.origin.x + 100, bounds.origin.y + 100, bounds.size.width, bounds.size.height);
-    
-//    TimeWindowController *timeWC = [[TimeWindowController alloc] initWithWindowNibName:@"TimeWindowController"];
-////    [timeWC showWindow:nil];
-////    [[NSApplication sharedApplication] runModalForWindow:timeWC.window];
-//    [timeWC showWindow:nil];
-//    [timeWC.window center];
 }
 
 - (NSInteger)numberOfRowsInTableView:(NSTableView *)tableView {
@@ -99,6 +96,10 @@
 
 - (void)codingWindowWillClose {
     _codingWC = nil;
+}
+
+- (void)colorConversionWindowWillClose {
+    _colorConversionWC = nil;
 }
 
 
